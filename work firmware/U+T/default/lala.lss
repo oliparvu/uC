@@ -1,0 +1,831 @@
+
+lala.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000398  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000026  00800060  00000398  0000042c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000002  00800086  00800086  00000452  2**0
+                  ALLOC
+  3 .debug_aranges 00000020  00000000  00000000  00000452  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 0000008f  00000000  00000000  00000472  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000066c  00000000  00000000  00000501  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000001b9  00000000  00000000  00000b6d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000005be  00000000  00000000  00000d26  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000a0  00000000  00000000  000012e4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000000fa  00000000  00000000  00001384  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001b0  00000000  00000000  0000147e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000c0  00000000  00000000  0000162e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   8:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  3c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  44:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  4c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	e8 e9       	ldi	r30, 0x98	; 152
+  68:	f3 e0       	ldi	r31, 0x03	; 3
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <.do_copy_data_start>
+
+0000006c <.do_copy_data_loop>:
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+
+00000070 <.do_copy_data_start>:
+  70:	a6 38       	cpi	r26, 0x86	; 134
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <.do_copy_data_loop>
+
+00000076 <__do_clear_bss>:
+  76:	10 e0       	ldi	r17, 0x00	; 0
+  78:	a6 e8       	ldi	r26, 0x86	; 134
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+  80:	a8 38       	cpi	r26, 0x88	; 136
+  82:	b1 07       	cpc	r27, r17
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+  86:	0e 94 85 01 	call	0x30a	; 0x30a <main>
+  8a:	0c 94 ca 01 	jmp	0x394	; 0x394 <_exit>
+
+0000008e <__bad_interrupt>:
+  8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000092 <LCD_init>:
+}
+*/
+
+unsigned int LCD_init()
+{
+    dataport = 0x38;                    //LCD 2 linii 5x7 
+  92:	88 e3       	ldi	r24, 0x38	; 56
+  94:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+  96:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+  98:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+  9a:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+  9c:	90 98       	cbi	0x12, 0	; 18
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  9e:	24 ef       	ldi	r18, 0xF4	; 244
+  a0:	31 e0       	ldi	r19, 0x01	; 1
+  a2:	c9 01       	movw	r24, r18
+  a4:	01 97       	sbiw	r24, 0x01	; 1
+  a6:	f1 f7       	brne	.-4      	; 0xa4 <LCD_init+0x12>
+
+unsigned int LCD_init()
+{
+    dataport = 0x38;                    //LCD 2 linii 5x7 
+    wrcomm();                              //Scrie comanda
+    dataport = 0x0E;                    //Clear LCD
+  a8:	8e e0       	ldi	r24, 0x0E	; 14
+  aa:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+  ac:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+  ae:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+  b0:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+  b2:	90 98       	cbi	0x12, 0	; 18
+  b4:	c9 01       	movw	r24, r18
+  b6:	01 97       	sbiw	r24, 0x01	; 1
+  b8:	f1 f7       	brne	.-4      	; 0xb6 <LCD_init+0x24>
+{
+    dataport = 0x38;                    //LCD 2 linii 5x7 
+    wrcomm();                              //Scrie comanda
+    dataport = 0x0E;                    //Clear LCD
+    wrcomm();                              //Scrie comanda
+    dataport = 0x0C;                    //Setari cursor
+  ba:	8c e0       	ldi	r24, 0x0C	; 12
+  bc:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+  be:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+  c0:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+  c2:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+  c4:	90 98       	cbi	0x12, 0	; 18
+  c6:	c9 01       	movw	r24, r18
+  c8:	01 97       	sbiw	r24, 0x01	; 1
+  ca:	f1 f7       	brne	.-4      	; 0xc8 <LCD_init+0x36>
+    wrcomm();                              //Scrie comanda
+    dataport = 0x0E;                    //Clear LCD
+    wrcomm();                              //Scrie comanda
+    dataport = 0x0C;                    //Setari cursor
+    wrcomm();                              //Scrie comanda
+    dataport = 0x01;                    //Cursor la linia 1, col 1
+  cc:	81 e0       	ldi	r24, 0x01	; 1
+  ce:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+  d0:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+  d2:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+  d4:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+  d6:	90 98       	cbi	0x12, 0	; 18
+  d8:	c9 01       	movw	r24, r18
+  da:	01 97       	sbiw	r24, 0x01	; 1
+  dc:	f1 f7       	brne	.-4      	; 0xda <LCD_init+0x48>
+    wrcomm();                              //Scrie comanda
+    dataport = 0x0C;                    //Setari cursor
+    wrcomm();                              //Scrie comanda
+    dataport = 0x01;                    //Cursor la linia 1, col 1
+    wrcomm();                              //Scrie comanda
+    dataport = 0x80;                   //Fara shipt
+  de:	80 e8       	ldi	r24, 0x80	; 128
+  e0:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+  e2:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+  e4:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+  e6:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+  e8:	90 98       	cbi	0x12, 0	; 18
+  ea:	c9 01       	movw	r24, r18
+  ec:	01 97       	sbiw	r24, 0x01	; 1
+  ee:	f1 f7       	brne	.-4      	; 0xec <LCD_init+0x5a>
+    dataport = 0x01;                    //Cursor la linia 1, col 1
+    wrcomm();                              //Scrie comanda
+    dataport = 0x80;                   //Fara shipt
+    wrcomm();                              //Scrie comanda
+return 1;
+}
+  f0:	81 e0       	ldi	r24, 0x01	; 1
+  f2:	90 e0       	ldi	r25, 0x00	; 0
+  f4:	08 95       	ret
+
+000000f6 <Mean>:
+}
+return 1;
+}
+
+unsigned int Mean(unsigned int n)		//achizitioneaza  3 esantioane la interval de 100ms, apoi face media aritmetica
+{
+  f6:	48 2f       	mov	r20, r24
+   _delay_ms(2) ;                                      //10ms delay
+    return 1;
+}  
+
+unsigned int read_adc(unsigned int channel)
+{	ADMUX=channel;
+  f8:	87 b9       	out	0x07, r24	; 7
+  ADCSRA=( (1<<ADEN) | (1<<ADSC) | (1<<ADIE) | (1<<ADPS1) | (1<<ADPS2) );//Incepe conversia, Seteaza bitii de prescalare
+  fa:	8e ec       	ldi	r24, 0xCE	; 206
+  fc:	86 b9       	out	0x06, r24	; 6
+  while(!(ADCSRA & 0x10)); //Asteapta sa termine conversia
+  fe:	34 9b       	sbis	0x06, 4	; 6
+ 100:	fe cf       	rjmp	.-4      	; 0xfe <Mean+0x8>
+  ADCSRA|=0x10;
+ 102:	34 9a       	sbi	0x06, 4	; 6
+  return ADCW;
+ 104:	64 b1       	in	r22, 0x04	; 4
+ 106:	75 b1       	in	r23, 0x05	; 5
+ 108:	88 ea       	ldi	r24, 0xA8	; 168
+ 10a:	91 e6       	ldi	r25, 0x61	; 97
+ 10c:	01 97       	sbiw	r24, 0x01	; 1
+ 10e:	f1 f7       	brne	.-4      	; 0x10c <Mean+0x16>
+   _delay_ms(2) ;                                      //10ms delay
+    return 1;
+}  
+
+unsigned int read_adc(unsigned int channel)
+{	ADMUX=channel;
+ 110:	47 b9       	out	0x07, r20	; 7
+  ADCSRA=( (1<<ADEN) | (1<<ADSC) | (1<<ADIE) | (1<<ADPS1) | (1<<ADPS2) );//Incepe conversia, Seteaza bitii de prescalare
+ 112:	8e ec       	ldi	r24, 0xCE	; 206
+ 114:	86 b9       	out	0x06, r24	; 6
+  while(!(ADCSRA & 0x10)); //Asteapta sa termine conversia
+ 116:	34 9b       	sbis	0x06, 4	; 6
+ 118:	fe cf       	rjmp	.-4      	; 0x116 <Mean+0x20>
+  ADCSRA|=0x10;
+ 11a:	34 9a       	sbi	0x06, 4	; 6
+  return ADCW;
+ 11c:	24 b1       	in	r18, 0x04	; 4
+ 11e:	35 b1       	in	r19, 0x05	; 5
+ 120:	88 ea       	ldi	r24, 0xA8	; 168
+ 122:	91 e6       	ldi	r25, 0x61	; 97
+ 124:	01 97       	sbiw	r24, 0x01	; 1
+ 126:	f1 f7       	brne	.-4      	; 0x124 <Mean+0x2e>
+   _delay_ms(2) ;                                      //10ms delay
+    return 1;
+}  
+
+unsigned int read_adc(unsigned int channel)
+{	ADMUX=channel;
+ 128:	47 b9       	out	0x07, r20	; 7
+  ADCSRA=( (1<<ADEN) | (1<<ADSC) | (1<<ADIE) | (1<<ADPS1) | (1<<ADPS2) );//Incepe conversia, Seteaza bitii de prescalare
+ 12a:	8e ec       	ldi	r24, 0xCE	; 206
+ 12c:	86 b9       	out	0x06, r24	; 6
+  while(!(ADCSRA & 0x10)); //Asteapta sa termine conversia
+ 12e:	34 9b       	sbis	0x06, 4	; 6
+ 130:	fe cf       	rjmp	.-4      	; 0x12e <Mean+0x38>
+  ADCSRA|=0x10;
+ 132:	34 9a       	sbi	0x06, 4	; 6
+  return ADCW;
+ 134:	84 b1       	in	r24, 0x04	; 4
+ 136:	95 b1       	in	r25, 0x05	; 5
+v1=read_adc(n);
+_delay_ms(100);
+v2=read_adc(n);
+_delay_ms(100);
+v3=read_adc(n);
+val=(v1+v2+v3)/3;
+ 138:	26 0f       	add	r18, r22
+ 13a:	37 1f       	adc	r19, r23
+ 13c:	82 0f       	add	r24, r18
+ 13e:	93 1f       	adc	r25, r19
+ 140:	63 e0       	ldi	r22, 0x03	; 3
+ 142:	70 e0       	ldi	r23, 0x00	; 0
+ 144:	0e 94 b6 01 	call	0x36c	; 0x36c <__udivmodhi4>
+ 148:	21 e3       	ldi	r18, 0x31	; 49
+ 14a:	30 e0       	ldi	r19, 0x00	; 0
+ 14c:	a9 01       	movw	r20, r18
+ 14e:	64 9f       	mul	r22, r20
+ 150:	90 01       	movw	r18, r0
+ 152:	65 9f       	mul	r22, r21
+ 154:	30 0d       	add	r19, r0
+ 156:	74 9f       	mul	r23, r20
+ 158:	30 0d       	add	r19, r0
+ 15a:	11 24       	eor	r1, r1
+val=val*49;
+
+return val;
+
+}
+ 15c:	c9 01       	movw	r24, r18
+ 15e:	08 95       	ret
+
+00000160 <Temp>:
+return 1;
+}
+
+
+unsigned int Temp(void)
+{
+ 160:	df 93       	push	r29
+ 162:	cf 93       	push	r28
+ 164:	00 d0       	rcall	.+0      	; 0x166 <Temp+0x6>
+ 166:	00 d0       	rcall	.+0      	; 0x168 <Temp+0x8>
+ 168:	cd b7       	in	r28, 0x3d	; 61
+ 16a:	de b7       	in	r29, 0x3e	; 62
+unsigned int i=3,val;
+unsigned char t[]="   ";
+ 16c:	80 91 60 00 	lds	r24, 0x0060
+ 170:	90 91 61 00 	lds	r25, 0x0061
+ 174:	a0 91 62 00 	lds	r26, 0x0062
+ 178:	b0 91 63 00 	lds	r27, 0x0063
+ 17c:	89 83       	std	Y+1, r24	; 0x01
+ 17e:	9a 83       	std	Y+2, r25	; 0x02
+ 180:	ab 83       	std	Y+3, r26	; 0x03
+ 182:	bc 83       	std	Y+4, r27	; 0x04
+
+val=Mean(temp);
+ 184:	83 e4       	ldi	r24, 0x43	; 67
+ 186:	90 e0       	ldi	r25, 0x00	; 0
+ 188:	0e 94 7b 00 	call	0xf6	; 0xf6 <Mean>
+ 18c:	9c 01       	movw	r18, r24
+ 18e:	fe 01       	movw	r30, r28
+ 190:	34 96       	adiw	r30, 0x04	; 4
+ 192:	0d c0       	rjmp	.+26     	; 0x1ae <Temp+0x4e>
+
+while(val)				//separa cifrele si le salveaza in sirul t
+	{
+	t[i]=val%10;
+ 194:	c9 01       	movw	r24, r18
+ 196:	6a e0       	ldi	r22, 0x0A	; 10
+ 198:	70 e0       	ldi	r23, 0x00	; 0
+ 19a:	0e 94 b6 01 	call	0x36c	; 0x36c <__udivmodhi4>
+ 19e:	80 83       	st	Z, r24
+	val=val/10;
+ 1a0:	c9 01       	movw	r24, r18
+ 1a2:	6a e0       	ldi	r22, 0x0A	; 10
+ 1a4:	70 e0       	ldi	r23, 0x00	; 0
+ 1a6:	0e 94 b6 01 	call	0x36c	; 0x36c <__udivmodhi4>
+ 1aa:	9b 01       	movw	r18, r22
+ 1ac:	31 97       	sbiw	r30, 0x01	; 1
+unsigned int i=3,val;
+unsigned char t[]="   ";
+
+val=Mean(temp);
+
+while(val)				//separa cifrele si le salveaza in sirul t
+ 1ae:	21 15       	cp	r18, r1
+ 1b0:	31 05       	cpc	r19, r1
+ 1b2:	81 f7       	brne	.-32     	; 0x194 <Temp+0x34>
+	t[i]=val%10;
+	val=val/10;
+	i--;
+	}
+
+l1[10]=48+t[0];			//cifra zecilor pe pozitia 10 de pe LCD
+ 1b4:	89 81       	ldd	r24, Y+1	; 0x01
+ 1b6:	80 5d       	subi	r24, 0xD0	; 208
+ 1b8:	80 93 6e 00 	sts	0x006E, r24
+if(l1[10]==0x50)		//ascunde primul 0
+ 1bc:	80 35       	cpi	r24, 0x50	; 80
+ 1be:	19 f4       	brne	.+6      	; 0x1c6 <Temp+0x66>
+{
+	l1[10]=0x20;			//0x20 ascii = " "
+ 1c0:	80 e2       	ldi	r24, 0x20	; 32
+ 1c2:	80 93 6e 00 	sts	0x006E, r24
+}
+
+l1[11]=48+t[1];			//cifra unitatilor pe pozitia 11
+ 1c6:	8a 81       	ldd	r24, Y+2	; 0x02
+ 1c8:	80 5d       	subi	r24, 0xD0	; 208
+ 1ca:	80 93 6f 00 	sts	0x006F, r24
+if(l1[11]==0x50)
+ 1ce:	80 35       	cpi	r24, 0x50	; 80
+ 1d0:	19 f4       	brne	.+6      	; 0x1d8 <Temp+0x78>
+{
+	l1[11]=0x30;
+ 1d2:	80 e3       	ldi	r24, 0x30	; 48
+ 1d4:	80 93 6f 00 	sts	0x006F, r24
+}
+
+l1[13]=48+t[2];			//prima zecimala pe pozitia 13
+ 1d8:	8b 81       	ldd	r24, Y+3	; 0x03
+ 1da:	80 5d       	subi	r24, 0xD0	; 208
+ 1dc:	80 93 71 00 	sts	0x0071, r24
+if(l1[13]==0x50)
+ 1e0:	80 35       	cpi	r24, 0x50	; 80
+ 1e2:	19 f4       	brne	.+6      	; 0x1ea <Temp+0x8a>
+{
+	l1[13]=0x30;
+ 1e4:	80 e3       	ldi	r24, 0x30	; 48
+ 1e6:	80 93 71 00 	sts	0x0071, r24
+}
+return 1;
+}
+ 1ea:	81 e0       	ldi	r24, 0x01	; 1
+ 1ec:	90 e0       	ldi	r25, 0x00	; 0
+ 1ee:	0f 90       	pop	r0
+ 1f0:	0f 90       	pop	r0
+ 1f2:	0f 90       	pop	r0
+ 1f4:	0f 90       	pop	r0
+ 1f6:	cf 91       	pop	r28
+ 1f8:	df 91       	pop	r29
+ 1fa:	08 95       	ret
+
+000001fc <Voltage>:
+return 1;
+}
+
+
+unsigned int Voltage(void)
+{ 
+ 1fc:	df 93       	push	r29
+ 1fe:	cf 93       	push	r28
+ 200:	00 d0       	rcall	.+0      	; 0x202 <Voltage+0x6>
+ 202:	00 d0       	rcall	.+0      	; 0x204 <Voltage+0x8>
+ 204:	cd b7       	in	r28, 0x3d	; 61
+ 206:	de b7       	in	r29, 0x3e	; 62
+unsigned int val,i=4;
+unsigned char volt[]="   ";
+ 208:	80 91 60 00 	lds	r24, 0x0060
+ 20c:	90 91 61 00 	lds	r25, 0x0061
+ 210:	a0 91 62 00 	lds	r26, 0x0062
+ 214:	b0 91 63 00 	lds	r27, 0x0063
+ 218:	89 83       	std	Y+1, r24	; 0x01
+ 21a:	9a 83       	std	Y+2, r25	; 0x02
+ 21c:	ab 83       	std	Y+3, r26	; 0x03
+ 21e:	bc 83       	std	Y+4, r27	; 0x04
+
+
+val=Mean(voltage);
+ 220:	81 e4       	ldi	r24, 0x41	; 65
+ 222:	90 e0       	ldi	r25, 0x00	; 0
+ 224:	0e 94 7b 00 	call	0xf6	; 0xf6 <Mean>
+ 228:	9c 01       	movw	r18, r24
+ 22a:	fe 01       	movw	r30, r28
+ 22c:	35 96       	adiw	r30, 0x05	; 5
+ 22e:	0d c0       	rjmp	.+26     	; 0x24a <Voltage+0x4e>
+while(val)				//separa cifrele si le salveaza in sirul volt
+	{
+	volt[i]=val%10;
+ 230:	c9 01       	movw	r24, r18
+ 232:	6a e0       	ldi	r22, 0x0A	; 10
+ 234:	70 e0       	ldi	r23, 0x00	; 0
+ 236:	0e 94 b6 01 	call	0x36c	; 0x36c <__udivmodhi4>
+ 23a:	80 83       	st	Z, r24
+	val=val/10;
+ 23c:	c9 01       	movw	r24, r18
+ 23e:	6a e0       	ldi	r22, 0x0A	; 10
+ 240:	70 e0       	ldi	r23, 0x00	; 0
+ 242:	0e 94 b6 01 	call	0x36c	; 0x36c <__udivmodhi4>
+ 246:	9b 01       	movw	r18, r22
+ 248:	31 97       	sbiw	r30, 0x01	; 1
+unsigned int val,i=4;
+unsigned char volt[]="   ";
+
+
+val=Mean(voltage);
+while(val)				//separa cifrele si le salveaza in sirul volt
+ 24a:	21 15       	cp	r18, r1
+ 24c:	31 05       	cpc	r19, r1
+ 24e:	81 f7       	brne	.-32     	; 0x230 <Voltage+0x34>
+	volt[i]=val%10;
+	val=val/10;
+	i--;
+	}
+
+l1[2]=48+volt[0];
+ 250:	89 81       	ldd	r24, Y+1	; 0x01
+ 252:	80 5d       	subi	r24, 0xD0	; 208
+ 254:	80 93 66 00 	sts	0x0066, r24
+if(l1[2]==0x50)
+ 258:	80 35       	cpi	r24, 0x50	; 80
+ 25a:	19 f4       	brne	.+6      	; 0x262 <Voltage+0x66>
+{
+l1[2]=0x30;
+ 25c:	80 e3       	ldi	r24, 0x30	; 48
+ 25e:	80 93 66 00 	sts	0x0066, r24
+}
+
+l1[4]=48+volt[1];
+ 262:	8a 81       	ldd	r24, Y+2	; 0x02
+ 264:	80 5d       	subi	r24, 0xD0	; 208
+ 266:	80 93 68 00 	sts	0x0068, r24
+if(l1[4]==0x50)
+ 26a:	80 35       	cpi	r24, 0x50	; 80
+ 26c:	19 f4       	brne	.+6      	; 0x274 <Voltage+0x78>
+{
+l1[4]=0x30;
+ 26e:	80 e3       	ldi	r24, 0x30	; 48
+ 270:	80 93 68 00 	sts	0x0068, r24
+}
+
+l1[5]=48+volt[2];
+ 274:	8b 81       	ldd	r24, Y+3	; 0x03
+ 276:	80 5d       	subi	r24, 0xD0	; 208
+ 278:	80 93 69 00 	sts	0x0069, r24
+if(l1[5]==0x50)
+ 27c:	80 35       	cpi	r24, 0x50	; 80
+ 27e:	19 f4       	brne	.+6      	; 0x286 <Voltage+0x8a>
+{
+l1[5]=0x30;
+ 280:	80 e3       	ldi	r24, 0x30	; 48
+ 282:	80 93 69 00 	sts	0x0069, r24
+}
+
+return 1;
+}
+ 286:	81 e0       	ldi	r24, 0x01	; 1
+ 288:	90 e0       	ldi	r25, 0x00	; 0
+ 28a:	0f 90       	pop	r0
+ 28c:	0f 90       	pop	r0
+ 28e:	0f 90       	pop	r0
+ 290:	0f 90       	pop	r0
+ 292:	cf 91       	pop	r28
+ 294:	df 91       	pop	r29
+ 296:	08 95       	ret
+
+00000298 <LCD_SendData>:
+
+
+unsigned int LCD_SendData (void)    //Afiseaza pe LCD sirul 
+{
+unsigned int i;
+dataport= 0x01;					   //Cursor la linia 1 coloana 1
+ 298:	81 e0       	ldi	r24, 0x01	; 1
+ 29a:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+ 29c:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+ 29e:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+ 2a0:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+ 2a2:	90 98       	cbi	0x12, 0	; 18
+ 2a4:	84 ef       	ldi	r24, 0xF4	; 244
+ 2a6:	91 e0       	ldi	r25, 0x01	; 1
+ 2a8:	01 97       	sbiw	r24, 0x01	; 1
+ 2aa:	f1 f7       	brne	.-4      	; 0x2a8 <LCD_SendData+0x10>
+ 2ac:	e4 e6       	ldi	r30, 0x64	; 100
+ 2ae:	f0 e0       	ldi	r31, 0x00	; 0
+dataport= 0x01;					   //Cursor la linia 1 coloana 1
+wrcomm();
+
+for (i=0;i<16;i++)
+{
+dataport=l1[i];
+ 2b0:	24 ef       	ldi	r18, 0xF4	; 244
+ 2b2:	31 e0       	ldi	r19, 0x01	; 1
+ 2b4:	81 91       	ld	r24, Z+
+ 2b6:	85 bb       	out	0x15, r24	; 21
+    return 1;
+}
+
+unsigned int wrdata(void)
+{
+    commport |= (1 << rs);                            //Setting RS = 1, selecting data register
+ 2b8:	92 9a       	sbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                      //Setting RW = 0
+ 2ba:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                           //EN = 1
+ 2bc:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                      //EN = 0, thus giving high to low pulse on Enable pin
+ 2be:	90 98       	cbi	0x12, 0	; 18
+ 2c0:	c9 01       	movw	r24, r18
+ 2c2:	01 97       	sbiw	r24, 0x01	; 1
+ 2c4:	f1 f7       	brne	.-4      	; 0x2c2 <LCD_SendData+0x2a>
+{
+unsigned int i;
+dataport= 0x01;					   //Cursor la linia 1 coloana 1
+wrcomm();
+
+for (i=0;i<16;i++)
+ 2c6:	80 e0       	ldi	r24, 0x00	; 0
+ 2c8:	e4 37       	cpi	r30, 0x74	; 116
+ 2ca:	f8 07       	cpc	r31, r24
+ 2cc:	99 f7       	brne	.-26     	; 0x2b4 <LCD_SendData+0x1c>
+{
+dataport=l1[i];
+wrdata();
+} 
+dataport = 0xC0;                //Cursoar la linia 2 coloana 1
+ 2ce:	80 ec       	ldi	r24, 0xC0	; 192
+ 2d0:	85 bb       	out	0x15, r24	; 21
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+ 2d2:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+ 2d4:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+ 2d6:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+ 2d8:	90 98       	cbi	0x12, 0	; 18
+ 2da:	84 ef       	ldi	r24, 0xF4	; 244
+ 2dc:	91 e0       	ldi	r25, 0x01	; 1
+ 2de:	01 97       	sbiw	r24, 0x01	; 1
+ 2e0:	f1 f7       	brne	.-4      	; 0x2de <LCD_SendData+0x46>
+ 2e2:	e5 e7       	ldi	r30, 0x75	; 117
+ 2e4:	f0 e0       	ldi	r31, 0x00	; 0
+dataport = 0xC0;                //Cursoar la linia 2 coloana 1
+wrcomm();
+
+for (i=0;i<16;i++)
+{
+dataport=l2[i];
+ 2e6:	24 ef       	ldi	r18, 0xF4	; 244
+ 2e8:	31 e0       	ldi	r19, 0x01	; 1
+ 2ea:	81 91       	ld	r24, Z+
+ 2ec:	85 bb       	out	0x15, r24	; 21
+    return 1;
+}
+
+unsigned int wrdata(void)
+{
+    commport |= (1 << rs);                            //Setting RS = 1, selecting data register
+ 2ee:	92 9a       	sbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                      //Setting RW = 0
+ 2f0:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                           //EN = 1
+ 2f2:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                      //EN = 0, thus giving high to low pulse on Enable pin
+ 2f4:	90 98       	cbi	0x12, 0	; 18
+ 2f6:	c9 01       	movw	r24, r18
+ 2f8:	01 97       	sbiw	r24, 0x01	; 1
+ 2fa:	f1 f7       	brne	.-4      	; 0x2f8 <LCD_SendData+0x60>
+wrdata();
+} 
+dataport = 0xC0;                //Cursoar la linia 2 coloana 1
+wrcomm();
+
+for (i=0;i<16;i++)
+ 2fc:	80 e0       	ldi	r24, 0x00	; 0
+ 2fe:	e5 38       	cpi	r30, 0x85	; 133
+ 300:	f8 07       	cpc	r31, r24
+ 302:	99 f7       	brne	.-26     	; 0x2ea <LCD_SendData+0x52>
+dataport=l2[i];
+wrdata();
+} 
+
+return 1;
+}
+ 304:	81 e0       	ldi	r24, 0x01	; 1
+ 306:	90 e0       	ldi	r25, 0x00	; 0
+ 308:	08 95       	ret
+
+0000030a <main>:
+unsigned char l2[]="I=  . A SOC=  % ";		//Sir linia 2
+unsigned int sw;				//Switch for engine state
+
+int main(void)
+{
+	DDRA = 0x00;							 //PortA in
+ 30a:	1a ba       	out	0x1a, r1	; 26
+    DDRC = 0xFF;                             //PortC out
+ 30c:	8f ef       	ldi	r24, 0xFF	; 255
+ 30e:	84 bb       	out	0x14, r24	; 20
+    DDRD = 0x07;                             //PortD 0, 1, 2 pin out
+ 310:	87 e0       	ldi	r24, 0x07	; 7
+ 312:	81 bb       	out	0x11, r24	; 17
+	LCD_init(); 							 //Initializare LCD
+ 314:	0e 94 49 00 	call	0x92	; 0x92 <LCD_init>
+	l1[14]=0xB2;							 //Caracter pt grade
+ 318:	82 eb       	ldi	r24, 0xB2	; 178
+ 31a:	80 93 72 00 	sts	0x0072, r24
+//	{	Voltage();
+//		Temp();
+//		Culomb();
+//		LCD_SendData()
+//	}
+Voltage();
+ 31e:	0e 94 fe 00 	call	0x1fc	; 0x1fc <Voltage>
+Temp();
+ 322:	0e 94 b0 00 	call	0x160	; 0x160 <Temp>
+LCD_SendData();
+ 326:	0e 94 4c 01 	call	0x298	; 0x298 <LCD_SendData>
+ 32a:	f9 cf       	rjmp	.-14     	; 0x31e <main+0x14>
+
+0000032c <wrcomm>:
+return 1;
+}
+
+unsigned int wrcomm(void)
+{
+    commport &= ~(1 << rs);                            //Setting RS = 0, selecting command register
+ 32c:	92 98       	cbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                           //Setting RW = 0
+ 32e:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                                //EN = 1
+ 330:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                           //EN = 0, thus giving high to low pulse on Enable pin
+ 332:	90 98       	cbi	0x12, 0	; 18
+ 334:	84 ef       	ldi	r24, 0xF4	; 244
+ 336:	91 e0       	ldi	r25, 0x01	; 1
+ 338:	01 97       	sbiw	r24, 0x01	; 1
+ 33a:	f1 f7       	brne	.-4      	; 0x338 <wrcomm+0xc>
+    _delay_ms(2);                                            //10ms delay
+    return 1;
+}
+ 33c:	81 e0       	ldi	r24, 0x01	; 1
+ 33e:	90 e0       	ldi	r25, 0x00	; 0
+ 340:	08 95       	ret
+
+00000342 <wrdata>:
+
+unsigned int wrdata(void)
+{
+    commport |= (1 << rs);                            //Setting RS = 1, selecting data register
+ 342:	92 9a       	sbi	0x12, 2	; 18
+    commport &= ~(1 << wr);                      //Setting RW = 0
+ 344:	91 98       	cbi	0x12, 1	; 18
+    commport |= (1 << en);                           //EN = 1
+ 346:	90 9a       	sbi	0x12, 0	; 18
+    commport &= ~(1 << en);                      //EN = 0, thus giving high to low pulse on Enable pin
+ 348:	90 98       	cbi	0x12, 0	; 18
+ 34a:	84 ef       	ldi	r24, 0xF4	; 244
+ 34c:	91 e0       	ldi	r25, 0x01	; 1
+ 34e:	01 97       	sbiw	r24, 0x01	; 1
+ 350:	f1 f7       	brne	.-4      	; 0x34e <wrdata+0xc>
+   _delay_ms(2) ;                                      //10ms delay
+    return 1;
+}  
+ 352:	81 e0       	ldi	r24, 0x01	; 1
+ 354:	90 e0       	ldi	r25, 0x00	; 0
+ 356:	08 95       	ret
+
+00000358 <read_adc>:
+
+unsigned int read_adc(unsigned int channel)
+{	ADMUX=channel;
+ 358:	87 b9       	out	0x07, r24	; 7
+  ADCSRA=( (1<<ADEN) | (1<<ADSC) | (1<<ADIE) | (1<<ADPS1) | (1<<ADPS2) );//Incepe conversia, Seteaza bitii de prescalare
+ 35a:	8e ec       	ldi	r24, 0xCE	; 206
+ 35c:	86 b9       	out	0x06, r24	; 6
+  while(!(ADCSRA & 0x10)); //Asteapta sa termine conversia
+ 35e:	34 9b       	sbis	0x06, 4	; 6
+ 360:	fe cf       	rjmp	.-4      	; 0x35e <read_adc+0x6>
+  ADCSRA|=0x10;
+ 362:	34 9a       	sbi	0x06, 4	; 6
+  return ADCW;
+ 364:	24 b1       	in	r18, 0x04	; 4
+ 366:	35 b1       	in	r19, 0x05	; 5
+}
+ 368:	c9 01       	movw	r24, r18
+ 36a:	08 95       	ret
+
+0000036c <__udivmodhi4>:
+ 36c:	aa 1b       	sub	r26, r26
+ 36e:	bb 1b       	sub	r27, r27
+ 370:	51 e1       	ldi	r21, 0x11	; 17
+ 372:	07 c0       	rjmp	.+14     	; 0x382 <__udivmodhi4_ep>
+
+00000374 <__udivmodhi4_loop>:
+ 374:	aa 1f       	adc	r26, r26
+ 376:	bb 1f       	adc	r27, r27
+ 378:	a6 17       	cp	r26, r22
+ 37a:	b7 07       	cpc	r27, r23
+ 37c:	10 f0       	brcs	.+4      	; 0x382 <__udivmodhi4_ep>
+ 37e:	a6 1b       	sub	r26, r22
+ 380:	b7 0b       	sbc	r27, r23
+
+00000382 <__udivmodhi4_ep>:
+ 382:	88 1f       	adc	r24, r24
+ 384:	99 1f       	adc	r25, r25
+ 386:	5a 95       	dec	r21
+ 388:	a9 f7       	brne	.-22     	; 0x374 <__udivmodhi4_loop>
+ 38a:	80 95       	com	r24
+ 38c:	90 95       	com	r25
+ 38e:	bc 01       	movw	r22, r24
+ 390:	cd 01       	movw	r24, r26
+ 392:	08 95       	ret
+
+00000394 <_exit>:
+ 394:	f8 94       	cli
+
+00000396 <__stop_program>:
+ 396:	ff cf       	rjmp	.-2      	; 0x396 <__stop_program>

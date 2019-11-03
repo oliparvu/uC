@@ -1,0 +1,125 @@
+Address = 0x00000082  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:40:0:-1
+Address = 0x00000082  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:41:0:-1
+Address = 0x00000086  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x00000088  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x0000008a  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x0000008c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x0000008e  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x00000098  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:43:0:-1
+Address = 0x0000009c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x0000009e  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x000000a0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x000000a2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x000000a4  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000aa  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:45:0:-1
+Address = 0x000000ae  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x000000b0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x000000b2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x000000b4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x000000b6  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000bc  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:47:0:-1
+Address = 0x000000c0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x000000c2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x000000c4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x000000c6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x000000c8  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000ce  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:49:0:-1
+Address = 0x000000d2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x000000d4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x000000d6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x000000d8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x000000da  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000e0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:52:0:-1
+Address = 0x000000e6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:126:0:-1
+Address = 0x000000e8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:180:0:-1
+Address = 0x000000ea  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:181:0:-1
+Address = 0x000000ee  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:182:0:-1
+Address = 0x000000f2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:183:0:-1
+Address = 0x000000f4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:184:0:-1
+Address = 0x000000f8  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x00000100  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:180:0:-1
+Address = 0x00000102  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:181:0:-1
+Address = 0x00000106  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:182:0:-1
+Address = 0x0000010a  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:183:0:-1
+Address = 0x0000010c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:184:0:-1
+Address = 0x00000110  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x00000118  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:180:0:-1
+Address = 0x0000011a  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:181:0:-1
+Address = 0x0000011e  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:182:0:-1
+Address = 0x00000122  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:183:0:-1
+Address = 0x00000124  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:184:0:-1
+Address = 0x00000128  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:134:0:-1
+Address = 0x0000014c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:139:0:-1
+Address = 0x00000150  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:92:0:-1
+Address = 0x0000015c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:94:0:-1
+Address = 0x00000174  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:96:0:-1
+Address = 0x00000184  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:100:0:-1
+Address = 0x00000190  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:101:0:-1
+Address = 0x0000019e  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:98:0:-1
+Address = 0x000001a4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:105:0:-1
+Address = 0x000001ac  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:106:0:-1
+Address = 0x000001b0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:108:0:-1
+Address = 0x000001b6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:111:0:-1
+Address = 0x000001be  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:112:0:-1
+Address = 0x000001c2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:114:0:-1
+Address = 0x000001c8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:117:0:-1
+Address = 0x000001d0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:118:0:-1
+Address = 0x000001d4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:120:0:-1
+Address = 0x000001da  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:123:0:-1
+Address = 0x000001ec  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:56:0:-1
+Address = 0x000001f8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:58:0:-1
+Address = 0x00000210  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:61:0:-1
+Address = 0x00000220  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:64:0:-1
+Address = 0x0000022c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:65:0:-1
+Address = 0x0000023a  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:62:0:-1
+Address = 0x00000240  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:69:0:-1
+Address = 0x00000248  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:70:0:-1
+Address = 0x0000024c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:72:0:-1
+Address = 0x00000252  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:75:0:-1
+Address = 0x0000025a  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:76:0:-1
+Address = 0x0000025e  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:78:0:-1
+Address = 0x00000264  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:81:0:-1
+Address = 0x0000026c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:82:0:-1
+Address = 0x00000270  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:84:0:-1
+Address = 0x00000276  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:88:0:-1
+Address = 0x00000288  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:146:0:-1
+Address = 0x0000028c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x0000028e  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x00000290  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x00000292  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x00000294  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000002a4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:151:0:-1
+Address = 0x000002a8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:171:0:-1
+Address = 0x000002aa  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:172:0:-1
+Address = 0x000002ac  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:173:0:-1
+Address = 0x000002ae  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:174:0:-1
+Address = 0x000002b0  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000002b6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:149:0:-1
+Address = 0x000002be  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:157:0:-1
+Address = 0x000002c4  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:26:0:-1
+Address = 0x000002c6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:27:0:-1
+Address = 0x000002ca  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:28:0:-1
+Address = 0x000002ce  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:29:0:-1
+Address = 0x000002d2  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:30:0:-1
+Address = 0x000002d8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:32:0:-1
+Address = 0x000002dc  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:33:0:-1
+Address = 0x000002e0  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:34:0:-1
+Address = 0x000002e6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:161:0:-1
+Address = 0x000002e8  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:162:0:-1
+Address = 0x000002ea  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:163:0:-1
+Address = 0x000002ec  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:164:0:-1
+Address = 0x000002ee  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000002f6  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:167:0:-1
+Address = 0x000002fc  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:171:0:-1
+Address = 0x000002fe  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:172:0:-1
+Address = 0x00000300  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:173:0:-1
+Address = 0x00000302  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:174:0:-1
+Address = 0x00000304  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x0000030c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:177:0:-1
+Address = 0x00000312  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:180:0:-1
+Address = 0x00000314  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:181:0:-1
+Address = 0x00000318  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:182:0:-1
+Address = 0x0000031c  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:183:0:-1
+Address = 0x0000031e  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:184:0:-1
+Address = 0x00000322  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:185:0:-1
+Address = 0x00000326  File:line:col:begin = E:\work firmware\U+T\default/../lala.c:185:0:-1

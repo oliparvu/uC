@@ -1,0 +1,103 @@
+Address = 0x00000092  File:line:col:begin = E:\work firmware\2\default/../2.c:45:0:-1
+Address = 0x00000092  File:line:col:begin = E:\work firmware\2\default/../2.c:46:0:-1
+Address = 0x00000096  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x00000098  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x0000009a  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x0000009c  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x0000009e  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000a8  File:line:col:begin = E:\work firmware\2\default/../2.c:48:0:-1
+Address = 0x000000ac  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x000000ae  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x000000b0  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x000000b2  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x000000b4  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000ba  File:line:col:begin = E:\work firmware\2\default/../2.c:50:0:-1
+Address = 0x000000be  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x000000c0  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x000000c2  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x000000c4  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x000000c6  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000cc  File:line:col:begin = E:\work firmware\2\default/../2.c:52:0:-1
+Address = 0x000000d0  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x000000d2  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x000000d4  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x000000d6  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x000000d8  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000de  File:line:col:begin = E:\work firmware\2\default/../2.c:54:0:-1
+Address = 0x000000e2  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x000000e4  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x000000e6  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x000000e8  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x000000ea  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x000000f0  File:line:col:begin = E:\work firmware\2\default/../2.c:57:0:-1
+Address = 0x000000f6  File:line:col:begin = E:\work firmware\2\default/../2.c:142:0:-1
+Address = 0x000000fa  File:line:col:begin = E:\work firmware\2\default/../2.c:143:0:-1
+Address = 0x000000fe  File:line:col:begin = E:\work firmware\2\default/../2.c:144:0:-1
+Address = 0x00000102  File:line:col:begin = E:\work firmware\2\default/../2.c:145:0:-1
+Address = 0x00000104  File:line:col:begin = E:\work firmware\2\default/../2.c:146:0:-1
+Address = 0x00000108  File:line:col:begin = E:\work firmware\2\default/../2.c:63:0:-1
+Address = 0x00000110  File:line:col:begin = E:\work firmware\2\default/../2.c:142:0:-1
+Address = 0x00000114  File:line:col:begin = E:\work firmware\2\default/../2.c:143:0:-1
+Address = 0x00000118  File:line:col:begin = E:\work firmware\2\default/../2.c:144:0:-1
+Address = 0x0000011c  File:line:col:begin = E:\work firmware\2\default/../2.c:145:0:-1
+Address = 0x0000011e  File:line:col:begin = E:\work firmware\2\default/../2.c:146:0:-1
+Address = 0x00000122  File:line:col:begin = E:\work firmware\2\default/../2.c:65:0:-1
+Address = 0x0000012a  File:line:col:begin = E:\work firmware\2\default/../2.c:142:0:-1
+Address = 0x0000012e  File:line:col:begin = E:\work firmware\2\default/../2.c:143:0:-1
+Address = 0x00000132  File:line:col:begin = E:\work firmware\2\default/../2.c:144:0:-1
+Address = 0x00000136  File:line:col:begin = E:\work firmware\2\default/../2.c:145:0:-1
+Address = 0x00000138  File:line:col:begin = E:\work firmware\2\default/../2.c:146:0:-1
+Address = 0x0000013c  File:line:col:begin = E:\work firmware\2\default/../2.c:67:0:-1
+Address = 0x00000144  File:line:col:begin = E:\work firmware\2\default/../2.c:69:0:-1
+Address = 0x0000014c  File:line:col:begin = E:\work firmware\2\default/../2.c:71:0:-1
+Address = 0x00000152  File:line:col:begin = E:\work firmware\2\default/../2.c:78:0:-1
+Address = 0x00000170  File:line:col:begin = E:\work firmware\2\default/../2.c:80:0:-1
+Address = 0x0000018a  File:line:col:begin = E:\work firmware\2\default/../2.c:81:0:-1
+Address = 0x0000018e  File:line:col:begin = E:\work firmware\2\default/../2.c:83:0:-1
+Address = 0x00000194  File:line:col:begin = E:\work firmware\2\default/../2.c:84:0:-1
+Address = 0x000001b2  File:line:col:begin = E:\work firmware\2\default/../2.c:86:0:-1
+Address = 0x000001ba  File:line:col:begin = E:\work firmware\2\default/../2.c:87:0:-1
+Address = 0x000001ca  File:line:col:begin = E:\work firmware\2\default/../2.c:90:0:-1
+Address = 0x000001d0  File:line:col:begin = E:\work firmware\2\default/../2.c:91:0:-1
+Address = 0x000001d4  File:line:col:begin = E:\work firmware\2\default/../2.c:95:0:-1
+Address = 0x000001dc  File:line:col:begin = E:\work firmware\2\default/../2.c:96:0:-1
+Address = 0x000001ee  File:line:col:begin = E:\work firmware\2\default/../2.c:99:0:-1
+Address = 0x000001f4  File:line:col:begin = E:\work firmware\2\default/../2.c:106:0:-1
+Address = 0x000001f8  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x000001fa  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x000001fc  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x000001fe  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x00000200  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x00000210  File:line:col:begin = E:\work firmware\2\default/../2.c:111:0:-1
+Address = 0x00000214  File:line:col:begin = E:\work firmware\2\default/../2.c:132:0:-1
+Address = 0x00000216  File:line:col:begin = E:\work firmware\2\default/../2.c:133:0:-1
+Address = 0x00000218  File:line:col:begin = E:\work firmware\2\default/../2.c:134:0:-1
+Address = 0x0000021a  File:line:col:begin = E:\work firmware\2\default/../2.c:135:0:-1
+Address = 0x0000021c  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x00000222  File:line:col:begin = E:\work firmware\2\default/../2.c:109:0:-1
+Address = 0x0000022a  File:line:col:begin = E:\work firmware\2\default/../2.c:118:0:-1
+Address = 0x00000230  File:line:col:begin = E:\work firmware\2\default/../2.c:27:0:-1
+Address = 0x00000232  File:line:col:begin = E:\work firmware\2\default/../2.c:28:0:-1
+Address = 0x00000236  File:line:col:begin = E:\work firmware\2\default/../2.c:29:0:-1
+Address = 0x00000238  File:line:col:begin = E:\work firmware\2\default/../2.c:30:0:-1
+Address = 0x0000023c  File:line:col:begin = E:\work firmware\2\default/../2.c:36:0:-1
+Address = 0x00000240  File:line:col:begin = E:\work firmware\2\default/../2.c:37:0:-1
+Address = 0x00000246  File:line:col:begin = E:\work firmware\2\default/../2.c:122:0:-1
+Address = 0x00000248  File:line:col:begin = E:\work firmware\2\default/../2.c:123:0:-1
+Address = 0x0000024a  File:line:col:begin = E:\work firmware\2\default/../2.c:124:0:-1
+Address = 0x0000024c  File:line:col:begin = E:\work firmware\2\default/../2.c:125:0:-1
+Address = 0x0000024e  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x00000256  File:line:col:begin = E:\work firmware\2\default/../2.c:128:0:-1
+Address = 0x0000025c  File:line:col:begin = E:\work firmware\2\default/../2.c:132:0:-1
+Address = 0x0000025e  File:line:col:begin = E:\work firmware\2\default/../2.c:133:0:-1
+Address = 0x00000260  File:line:col:begin = E:\work firmware\2\default/../2.c:134:0:-1
+Address = 0x00000262  File:line:col:begin = E:\work firmware\2\default/../2.c:135:0:-1
+Address = 0x00000264  File:line:col:begin = c:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h:105:0:-1
+Address = 0x0000026c  File:line:col:begin = E:\work firmware\2\default/../2.c:138:0:-1
+Address = 0x00000272  File:line:col:begin = E:\work firmware\2\default/../2.c:142:0:-1
+Address = 0x00000274  File:line:col:begin = E:\work firmware\2\default/../2.c:143:0:-1
+Address = 0x00000278  File:line:col:begin = E:\work firmware\2\default/../2.c:144:0:-1
+Address = 0x0000027c  File:line:col:begin = E:\work firmware\2\default/../2.c:145:0:-1
+Address = 0x0000027e  File:line:col:begin = E:\work firmware\2\default/../2.c:146:0:-1
+Address = 0x00000282  File:line:col:begin = E:\work firmware\2\default/../2.c:147:0:-1
+Address = 0x00000286  File:line:col:begin = E:\work firmware\2\default/../2.c:147:0:-1
